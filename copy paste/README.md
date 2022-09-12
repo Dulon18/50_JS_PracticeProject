@@ -1,4 +1,4 @@
-# JS_practice_project
+# Copy Paste with JS
 
 <p align="center">
 
