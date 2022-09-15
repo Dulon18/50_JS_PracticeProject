@@ -27,7 +27,7 @@ body{
     box-sizing: var(--box-shadow);
     padding: 2rem;
     border-radius: 2rem;
-    overflow-y: auto;
+    
 }
 .container .container-header{
     display: flex;
@@ -53,6 +53,7 @@ h1{
 .todolist-container{
     width: 100%;
     height: 80%;
+    overflow-y: auto;
 
 }
 .inputField{
