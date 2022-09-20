@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Tai+Heritage+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Currency Converter</h1>
+      </div>
+      <div class="rate">
+        <div class="rate1"></div>
+        <div class="rate2"></div>
+      </div>
+      <div class="main">
+        <div class="initial">
+          <div class="options">
+            <select></select>
+          </div>
+          <div class="input">
+            <input type="number" placeholder="Type here.."/>
+          </div>
+        </div>
+        <span class="material-icons swap" style="font-size: 36px">
+          <i class="uil uil-exchange"></i>
+        </span>
+        <div class="target">
+          <div class="options"><select></select></div>
+          <div class="input">
+            <input disabled type="number"/>
+          </div>
+        </div>
+      </div>
+      <button class="result">Result</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
