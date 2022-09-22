@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab:wght@500&family=Tai+Heritage+Pro&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.container{
+    background: url('sandwatch2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+
+}
+.main{
+    position: relative;
+    top:50%;
+    left: 50%;
+    width: 30rem;
+    transform: translate(-50%,-50%);
+    background: #cbc632;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem -0.8rem rgb(203, 203, 195);
+ 
+}
+p{
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    color: rgb(24, 34, 29);
+    z-index: 9999;
+    font-size: 38px;
+    margin-bottom: 120px;
+}
+button{
+    padding: 10px 38px;
+    border: 0px solid #A9A9A9;
+    color: rgb(22, 21, 4);
+    transition:  all .2s ease;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
