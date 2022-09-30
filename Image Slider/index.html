@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bg"></div>
+      <header>
+        <a href="#" class="logo">Flower House</a>
+        <ul class="nav">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text">
+          <h1>Beauty of Nature</h1>
+          <p>
+            These flowers are unique in that they have the ability to provide
+            energy in the form of nourishment and vibrancy-attributes which
+            mirror the sun and the energy provided by its heat and light.
+            Sunflowers are known for being “happy” flowers, making them the
+            perfect gift to bring joy to someone's (or your) day.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="img/sunflower1.png" class="flowers" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li data-text="Sunflower" class="active">
+          <img
+            src="img/sunflower1.png"
+            onclick="imgSlider('img/sunflower1.png');
+          changeColor('rgb(134, 187, 61)')"
+          />
+        </li>
+        <li data-text="Rose">
+          <img
+            src="img/rose.png"
+            onclick="imgSlider('img/rose.png');
+          changeColor('#f01912')"
+          />
+        </li>
+        <li data-text="Daliya">
+          <img
+            src="img/daliya.png"
+            onclick="imgSlider('img/daliya.png');changeColor('	#d92653')"
+          />
+        </li>
+        <li data-text="Lotus">
+          <img
+            src="img/lotus.png"
+            onclick="imgSlider('img/lotus.png');changeColor('#ff99ff')"
+          />
+        </li>
+        <li data-text="Purple">
+          <img
+            src="img/purple.png"
+            onclick="imgSlider('img/purple.png');changeColor('#990099')"
+          />
+        </li>
+      </ul>
+      <ul class="socialmedia">
+        <li>
+          <a href="#"><img src="img/fb.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/ins.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/Lin.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/twt.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+ 
+    <script>
+      //change image on click
+      function imgSlider(abc) {
+        document.querySelector(".flowers").src = abc;
+      }
+      //bg clolor change
+      function changeColor(color) {
+        const bg = document.querySelector(".bg");
+        bg.style.background = color;
+      }
+
+      //add active class in selected thmbnails
+      let el = document.querySelectorAll(".thumb li");
+      for (let i = 0; i < el.length; i++) {
+        el[i].onclick = function () {
+          var c = 0;
+          while (c < el.length) {
+            el[c++].className = "check";
+          }
+          el[i].className = "check active";
+        };
+      }
+    </script>
+  </body>
+</html>
