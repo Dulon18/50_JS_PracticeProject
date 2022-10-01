@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
     <title>Age Calculator</title>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <div class="inner-box">
-            <input type="date">
-            <button>Calculate</button>
+
+    <div class="container mt-3  d-flex  justify-content-center">
+        <div class="inner-box p-3 d-flex ">
+            <input type="date" class="form-control mx-3 date">
+            <button class="calculate btn btn-primary">Calculate</button>
         </div>
     </div>
-    <div class="container d-flex ">
-        <div class="inner-box p-2">
-            <p>0</p>
-            <p>Years</p>
+    <div class="container d-flex mt-3  justify-content-center">
+        <div class="inner-box p-2 bg-dark mx-3 text-white">
+            <p class="text-center year">0</p>
+            <p class="p-3 text-center ">Years</p>
         </div>
-        <div class="inner-box p-2">
-            <p>0</p>
-            <p>Months</p>
+        <div class="inner-box p-2 bg-info mx-3 text-white">
+            <p class="text-center month">0</p>
+            <p class="text-center p-3 ">Months</p>
         </div>
-        <div class="inner-box p-2">
-            <p>0</p>
-            <p>Days</p>
+        <div class="inner-box p-2 bg-primary text-white">
+            <p class="text-center day">0</p>
+            <p class="text-center p-3 ">Days</p>
         </div>
     </div>
+    <script src="script.js"></script>
+    
 </body>
 </html>
