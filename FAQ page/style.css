@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Roboto+Slab:wght@500&family=Tai+Heritage+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: rgb(232, 224, 224);
+    
+}
+section{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(189, 166, 35);
+    font-size: 40px;
+    text-align: center;
+}
+.section-center{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(242, 254, 254);
+}
