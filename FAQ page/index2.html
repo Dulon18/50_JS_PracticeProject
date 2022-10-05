@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&family=Spartan:wght@400;700&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Roboto+Slab:wght@500&family=Tai+Heritage+Pro&display=swap');
+
+      .container {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        width: 40%;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        color: rgb(189, 166, 35);
+        font-size: 40px;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-bottom: 2px solid #6d6b6b;
+      }
+
+      .question {
+        font-family: "Spartan", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        position: relative;
+        color: #5c5a5a;
+      }
+
+      .icon-main {
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+      }
+
+      .non-active {
+        display: none;
+      }
+
+      .answer {
+        font-size: 17px;
+        font-family:'Times New Roman', Times;
+        font-weight: none;
+      }
+    </style>
+    <title>FAQs</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>General questions</h1>
+      <ul>
+        <li class="faq">
+          <div class="question">
+            What is the use of CSRF token?
+            <span class="icon-main">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </div>
+          <div class="answer non-active">
+            A CSRF token is a secure random token (e.g., synchronizer token or
+            challenge token) that is used to prevent CSRF attacks. The token
+            needs to be unique per user session and should be of large random
+            value to make it difficult to guess. A CSRF secure application
+            assigns a unique CSRF token for every user session.
+          </div>
+        </li>
+        <li class="faq">
+          <div class="question">
+            What is a FAQ section?
+            <span class="icon-main">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </div>
+          <p class="answer non-active">
+            the Frequently Asked Questions (FAQ) section is a part of your
+            website where you address common concerns, questions,and objections
+            that customers have.
+          </p>
+        </li>
+        <li class="faq">
+          <div class="question">
+                What is Middleware?
+            <span class="icon-main">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </div>
+          <p class="answer non-active">
+            Laravel Middleware acts as a bridge between a request and a reaction.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const faqs = document.querySelectorAll(".faq");
+      for (const item of faqs) {
+        const curr_faq = item.childNodes;
+        console.log(curr_faq);
+        const question = curr_faq[1];
+        const answer = curr_faq[3];
+        const icon = question.querySelector(".icon-main");
+        icon.addEventListener("click", function () {
+          answer.classList.toggle("non-active");
+          const i = icon.querySelector("i");
+          i.classList.toggle("fa-xmark");
+          i.classList.toggle("fa-plus");
+        });
+      }
+    </script>
+  </body>
+</html>
