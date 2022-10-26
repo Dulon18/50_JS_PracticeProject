@@ -31,7 +31,7 @@ h1{
     transform: translateX(-400px);
 
 }
-.box .show{
+.box.show{
     transform: translateX(0);
 }
 h2{
