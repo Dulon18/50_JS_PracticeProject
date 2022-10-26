@@ -12,6 +12,7 @@ body{
 h1{
     margin: 10px;
     font-size: 60px;
+    color: #fa695b;
 }
 .box{
     border-color: rgba(255,255,255,0.2);
@@ -21,20 +22,20 @@ h1{
     display: flex;
     align-items: center;
     border-radius: 10px;
-    box-shadow: rgba(0,0,0,0.2) 0 50px 30px -7px;
+    box-shadow: rgba(0,0,0,0.2) 0 50px 30px -8px;
     transform: translateX(400%);
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
 
 }
 .box:nth-of-type(even)
 {
-    transform: translateX(-400px);
+    transform: translateX(-400%);
 
 }
 .box.show{
     transform: translateX(0);
 }
-h2{
+.box h2{
     font-weight: 400;
     color: gray;
     margin: 50px;
