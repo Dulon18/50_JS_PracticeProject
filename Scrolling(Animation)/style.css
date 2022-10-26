@@ -1,0 +1,43 @@
+body{
+    font-family: 'kalam',cursive;
+    background-image: linear-gradient(to  top, #feada6  0%, #f5efef  100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 300;
+    margin: 0;
+    overflow-x: hidden;
+}
+h1{
+    margin: 10px;
+    font-size: 60px;
+}
+.box{
+    border-color: rgba(255,255,255,0.2);
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2) 0 50px 30px -7px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+
+}
+.box:nth-of-type(even)
+{
+    transform: translateX(-400px);
+
+}
+.box .show{
+    transform: translateX(0);
+}
+h2{
+    font-weight: 400;
+    color: gray;
+    margin: 50px;
+    padding: 30px;
+
+}
