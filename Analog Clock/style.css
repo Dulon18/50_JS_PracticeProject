@@ -12,9 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     color: azure;
-    background: rgb(240, 239, 239)
-    
-
+    background: #ffffff;
 }
 .clock{
     position: relative;
