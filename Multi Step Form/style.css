@@ -61,7 +61,8 @@ button:hover {
 }
 
 .step.active {
-    opacity: 1
+     opacity: 4;
+    background-color: #3acf3f
 }
 
 .step.finish {
