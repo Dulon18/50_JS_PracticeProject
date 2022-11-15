@@ -15,12 +15,12 @@ body{
 
 input{
     padding: 1rem;
-    border-radius: 25px;
+    border-radius: 20px;
     border: none;
     background-color: #fff;
     font-family: inherit;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    min-width: 300px;
+    min-width: 400px;
     font-size: 1rem;
 }
 input:focus {
