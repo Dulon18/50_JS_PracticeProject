@@ -24,12 +24,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 h3 {
-  font-size: 26px;
+  font-size: 20px;
   margin-top: 20px;
   font-weight: 600;
 }
 input {
-  width: 160px;
+ width: 170px;
   padding: 15px 0;
   border-radius: 5px;
   color: #663399;
@@ -41,7 +41,7 @@ input {
   border: 1px solid #202020;
 }
 button {
-  width: 160px;
+  width: 170px;
   color: #ffffff;
   padding: 15px 0;
   border: none;
@@ -55,4 +55,14 @@ button {
 p {
   font-weight: 600;
   margin-bottom: 10px;
+}
+.title{
+  color: #657ced;
+  justify-content: center;
+  align-items: center;
+}
+span{
+  color: #663399;
+  font-weight: bold;
+
 }
