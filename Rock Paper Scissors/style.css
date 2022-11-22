@@ -11,7 +11,7 @@ body {
   font-size: 20px;
   text-shadow: 3px 3px 3px #ababab;
   height: 100vh;
-  background: linear-gradient(135deg, #ffcf1b, #ff8b1b);
+  background: linear-gradient(135deg,  #caf63a, #f99a41);
 }
 .container {
   width: 45%;
