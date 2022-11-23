@@ -1,1 +1,1 @@
-<h1 align="center">Random Jokes Generator &#128512;</h1>
+<h1 align="center">	&#128516; Random Jokes Generator	&#128516;</h1>
