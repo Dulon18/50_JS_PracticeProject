@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9c27b0;
+  color: #ffd700;
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+table {
+  background-color: #9c27b0;
+  cursor: pointer;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  border: 3px solid #c0c0c0;
+}
+table tr:first-child td {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+#game tr td {
+  width: 60px;
+  height: 80px;
+}
+#title {
+  text-align: center;
+  padding-bottom: 15px;
+}
+#options {
+  display: flex;
+  justify-content: center;
+}
+#choice {
+  text-align: center;
+  padding: 30px 0;
+}
+#game {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+}
+#details {
+  display: flex;
+  flex-wrap: wrap;
+}
+#accordion {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+button {
+  width: 70px;
+  padding: 5px;
+  background-color: transparent;
+  border: 2px solid #c0c0c0;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+#anotherGame {
+  display: none;
+  padding: 30px;
+} /*Added by Eduardo Sanchez*/
+h1 {
+  font-family: "Ruslan Display", cursive;
+  font-size: 72px;
+}
+.down-dots,
+.up-dots,
+.placeholder {
+  clear: both;
+  width: 100%;
+  height: 20px;
+}
+.down-dots .fa,
+.up-dots .fa {
+  display: none;
+}
+.center-space {
+  height: 80px;
+  color: #c0c0c0;
+}
+.center-space .fa {
+  position: relative;
+  top: 10%;
+}
+.fa-dot-circle-o {
+  font-size: 14px;
+  color: #c0c0c0;
+}
+.fa-stop-circle {
+  color: #ffd700;
+}
+#result {
+  padding-top: 80px;
+}
