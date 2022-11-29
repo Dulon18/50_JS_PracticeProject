@@ -1,2 +1,5 @@
-<h1 align="center"; class="hh">Tic Toc Toe</h1>
+<h1 align="center">Tic Toc Toe</h1>
 
+<p align="center">
+<img width="500px" src="https://user-images.githubusercontent.com/80118217/204586171-386ad0b0-44d8-4e54-9f0a-3f867dedcf6b.JPG">
+</p>
