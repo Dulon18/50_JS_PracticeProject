@@ -1,7 +1,7 @@
 .main{
     margin: 20px auto;
     width: 400px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Arial Narrow Bold', sans-serif;
 }
 label{
     display: block;
