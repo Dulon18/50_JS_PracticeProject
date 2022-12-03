@@ -1,8 +1,12 @@
 .main{
     margin: 20px auto;
     width: 400px;
-    font-family:'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;
+    background-color: rgb(200, 207, 246);
+    padding: 40px;
 }
+
 label{
     display: block;
     font-weight: bold;
