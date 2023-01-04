@@ -1,4 +1,4 @@
-<h2 align="center"><------- Age Calculator -----></h2>
+<h2 align="center">Age Calculator</h2>
   
   
   <p align="center">
