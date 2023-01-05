@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"/>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="">
+                    <span  class="title"><h2>Brand Name</h2></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                    <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                    <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                    <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <span class="title">
+                        Service Provider
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                    <span class="title">
+                       Booking
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="icon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+                    <span class="title">
+                        Services
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span  class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                    <span class="title">
+                       Settings
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="title">
+                      Signout
+                    </span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- header start -->
+
+         <div class="main">
+             <div class="topbar">
+                 <div class="toggle"  onclick="toggleMenu();" ></div>
+                 <div class="search">
+                     <label >
+                           <input type="text"  placeholder="Search Here">
+                           <i class="fa fa-search" aria-hidden="true"></i>
+                       </label>
+                    </div>
+
+                      <div class="user">
+                    <img src="b2.jpg" alt="Sorry Not found">
+                </div>
+                    <div class="username">
+                        <h4>Dulan</h4>
+                        <small>Super Admin</small>
+                    </div>
+             </div>
+               <!-- header End -->
+              <!-- card start -->
+              <div class="cardbox">
+                  <div class="card">
+                      <div>
+                          <div class="numbers">1,025</div>
+                          <div class="cardname">Total Customer</div>
+                      </div>
+                  </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">40</div>
+                        <div class="cardname">Total Sevices Provider</div>
+                    </div>
+              </div>
+            <div class="card">
+                <div>
+                    <div class="numbers">30</div>
+                    <div class="cardname">Total Sevices </div>
+                </div>
+            </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">25</div>
+                        <div class="cardname">Total Sevices Provider</div>
+                    </div>
+                </div>
+                
+            <!-- card end -->
+
+         </div>
+      
+    </div>
+
+      <!-- js code -->
+      <script>
+          function toggleMenu(){
+              let toggle = document.querySelector('.toggle');
+              let nav= document.querySelector('.nav');
+              let main = document.querySelector('.main');
+              toggle.classList.toggle('active');
+              nav.classList.toggle('active');
+              main.classList.toggle('active');
+              
+          }
+      </script>
+</body>
+</html>
