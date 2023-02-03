@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+.card_content {
+    padding: 20px;
+  }
+
+.card_up,
+p {
+  background: linear-gradient(110deg, #ececec 9%, #f5f5f5 18%, #ececec 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1s shine linear infinite;
+}
+@keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
+.card_up {
+  height: 100px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card_content {
+  padding: 20px;
+}
+p {
+  height: 70px;
+  width: 100%;
+}
