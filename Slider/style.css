@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+html *,
+html *:brfore,
+html *:after,
+html *::brfore,
+html *::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  min-width: 70%;
+  height: auto;
+  border-style: none;
+}
+.main {
+  width: 100%;
+  height: 50vh;
+  border-color: whitesmoke;
+  position: relative;
+}
+.slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.slider .slide {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: 0.5s;
+}
+.slider .slide:nth-child(1) {
+  background: url(https://www.teahub.io/photos/full/19-196871_sun-rise-images-hd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(2) {
+  background: url(https://cdn.wallpapersafari.com/53/24/5gELZn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(3) {
+  background: url(https://www.teahub.io/photos/full/247-2475820_nature-sunrise-wallpaper-hd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(4) {
+  background: url(https://images.pexels.com/photos/2792043/pexels-photo-2792043.jpeg?cs=srgb&dl=pexels-steshka-willems-2792043.jpg&fm=jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(5) {
+  background: url(https://wallpaperaccess.com/full/1124130.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:hover {
+  width: 80%;
+  cursor: pointer;
+}
