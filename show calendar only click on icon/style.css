@@ -1,0 +1,27 @@
+#date {
+  width: 150px;
+  outline: none;
+  border: 1px solid #aaa;
+  padding: 6px 28px;
+  color: #aaa;
+}
+
+.date-container {
+  position: relative;
+  float: left;
+  .date-text {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    color: #aaa;
+  }
+  
+  .date-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* pointer-events: none; */
+    cursor: pointer;
+    color: #aaa;
+  }
+}
