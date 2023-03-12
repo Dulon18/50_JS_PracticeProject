@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skeleton Loading in CSS</title>
+    <link rel="stylesheet" href="new2.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card_img loading"></div>
+      <div class="card-text">
+        <h1 class="heading loading"></h1>
+        <p class="para loading"></p>
+      </div>
+    </div>
+    <script>
+      const imgContainer = document.querySelector(".card_img"),
+        heading = document.querySelector(".heading"),
+        para = document.querySelector(".para");
+      setTimeout(() => {
+        const img = document.createElement("img");
+        img.setAttribute("src", "./flower.jpg");
+        imgContainer.appendChild(img);
+        heading.textContent = "Flower";
+        para.textContent =
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quod voluptas";
+        imgContainer.classList.remove("loading");
+        heading.classList.remove("loading");
+        para.classList.remove("loading");
+      }, 5000);
+    </script>
+  </body>
+</html>
