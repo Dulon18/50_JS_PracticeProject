@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Merriweather:ital@1&family=Nunito+Sans:wght@600&family=Roboto+Slab&display=swap");
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: azure;
+}
+
+ul {
+  margin: 5%;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 25px 0;
+  border-radius: 25px;
+  background-color: #18181b;
+  box-shadow: 0 4px 8px 0 #00ffff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
