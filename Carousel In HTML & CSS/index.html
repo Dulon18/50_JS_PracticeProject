@@ -5,27 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carousel In HTML & CSS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   </head>
   <body>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://i.pinimg.com/originals/c4/04/4b/c4044b3b39f453bc1f07a4ba72f12bf7.jpg" alt="" />
+    <swiper-container>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://i.pinimg.com/originals/c4/04/4b/c4044b3b39f453bc1f07a4ba72f12bf7.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.floraqueen.com/blog/wp-content/uploads/2020/03/shutterstock_459973840.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://i0.wp.com/www.figandbloom.com/wp-content/uploads/2017/09/himalayan-blue-poppy.jpg?fit=900%2C594&ssl=1"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.floraqueen.com/blog/wp-content/uploads/2020/02/shutterstock_1009843408.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="https://www.floraqueen.com/blog/wp-content/uploads/2020/03/shutterstock_459973840.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://i0.wp.com/www.figandbloom.com/wp-content/uploads/2017/09/himalayan-blue-poppy.jpg?fit=900%2C594&ssl=1" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://www.floraqueen.com/blog/wp-content/uploads/2020/02/shutterstock_1009843408.jpg" alt="" />
-        </div>
+        <button type="button" class="swiper-button-next"></button>
+        <button type="button" class="swiper-button-prev"></button>
+        <div class="swiper-pagination"></div>
       </div>
-      <button type="button" class="swiper-button-next"></button>
-      <button type="button" class="swiper-button-prev"></button>
-      <div class="swiper-pagination"></div>
-    </div>
+    </swiper-container>
+
+    <script>
+      var swiper = new Swiper(".carousel", {
+        navigator: {
+          nextEL: ".swiper-button-next",
+          prevEL: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
