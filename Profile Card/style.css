@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin&family=Arbutus+Slab&family=Lora:wght@700&family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,200;1,400;1,600;1,900&family=Raleway:wght@600&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.profile {
+  padding: 80px 15px;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1512500095137-fd9415c49384?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGVha3N8ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(5, 33, 87);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+.profile-card .img {
+  max-width: 150px;
+  margin: auto;
+}
+.profile-card .img img {
+  border-radius: 60%;
+  width: 100%;
+  vertical-align: middle;
+}
+.profile-card .info {
+  margin-top: 20px;
+  color: aliceblue;
+}
+.profile-card .info h1 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 26px;
+}
+.profile-card .info p {
+  text-transform: capitalize;
+}
+.profile-card .number {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+  color: aliceblue;
+}
+.profile-card .number h2 {
+  font-size: 22px;
+}
+.profile-card .number p {
+  text-transform: capitalize;
+}
+.profile-card .btns {
+  margin-top: 20px;
+}
+.profile-card .btns .btn {
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  color: aliceblue;
+  vertical-align: middle;
+  text-transform: capitalize;
+  user-select: none;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.btn-1 {
+  color: rgb(7, 49, 133);
+  font-weight: 800;
+  background-color: rgb(248, 191, 23);
+}
+.btn-2 {
+  border-color: aliceblue;
+}
+@media (max-width: 400px) {
+  .profile-card {
+    padding: 30px 20px;
+  }
+}
