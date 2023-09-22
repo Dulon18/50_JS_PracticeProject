@@ -1,35 +1,39 @@
 :root{
-     --primary-color:#f6e230;
+     --primary-color:#151759;
 }
 h2{
      text-align: center;
+     color: rgb(40, 81, 186);
 }
 .signature-pad-form{
     width: 30rem;
-    min-width: 100%;
+    min-width: 50%;
     margin: 0 auto;
     text-align: center;
 }
 .signature-pad{
      cursor: crosshair;
-     width: 100%;
+     width: 50%;
      border: 2px solid var(--primary-color);
      border-radius: 4px;
 }
 
 .btn-group{
      display: flex;
+     justify-content: center;
      gap: 4px;
 }
 .clear-btn, .submit-btn{
-     width: 100%;
+     width: 15%;
      background-color: var(--primary-color);
      border: none;
      padding: 0.5em 1rem;
-     color: #d83a3a;
+     color: #ffffff;
      font-weight: bold;
      cursor: pointer;
      margin-top: 2rem;
+
+
 }
 @media (pointer: coarse) {
      body{
