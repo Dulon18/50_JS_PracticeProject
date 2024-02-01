@@ -17,7 +17,4 @@
   <img width="500px" src="https://user-images.githubusercontent.com/80118217/192110662-721704ef-7229-4701-a37d-bcde0949763c.JPG">
   <img width="500px" src="https://user-images.githubusercontent.com/80118217/192110776-aca48752-4842-4d43-ba09-f90a6be36bb5.JPG">
 </p>
-
-
-
-
+<p align="center"><span style="color: red;">&hearts;</span> Thank You <span style="color: red;">&hearts;</span></p>
