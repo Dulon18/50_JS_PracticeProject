@@ -1,4 +1,4 @@
-<h1 align="center"> JS Practice Project </h1>
+<h1 align="center"> JS Practice Project for Beginner</h1>
 
 <p align="center">
 
